@@ -1,12 +1,16 @@
 
-
+## <div align="center">四足机器人视觉</div>
 
 
 <details>
-  <summary>分类网络模型</summary>
+  <summary>目标检测</summary>
 
 <br>
+  使用YOLOv5n模型实现五种动物的识别，五种动物包括鸟、猫咪、狗、马、大象和长颈鹿
 
 
+<details>
+  <summary>opencv</summary>
 
-1111
+<br>
+  使用YOLOv5n模型实现图形识别计数和QR码识别
