@@ -1,0 +1,1 @@
+/home/pi/catkin_ws/devel/.private/mini2_description/lib/pkgconfig/mini2_description.pc

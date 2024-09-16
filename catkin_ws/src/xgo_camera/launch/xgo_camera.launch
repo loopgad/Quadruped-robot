@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<launch>
+  <node name="xgo_camera_node" pkg="xgo_camera" type="xgo_camera.py" respawn="false" output="screen"> 	
+  </node>
+
+</launch>

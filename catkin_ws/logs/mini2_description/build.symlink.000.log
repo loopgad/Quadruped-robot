@@ -1,0 +1,3 @@
+Symlinking /home/pi/catkin_ws/devel/lib/pkgconfig/mini2_description.pc
+Symlinking /home/pi/catkin_ws/devel/share/mini2_description/cmake/mini2_descriptionConfig.cmake
+Symlinking /home/pi/catkin_ws/devel/share/mini2_description/cmake/mini2_descriptionConfig-version.cmake

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<launch>
+  <arg name="com_port" default="/dev/ttyAMA0"/>
+  <arg name="is_xgomini" default="true" />
+  <arg name="enable_joint_gui" default="false"/>
+  <param name="com_port" value="$(arg com_port)"/>
+  <param name="enable_joint_gui" value="$(arg enable_joint_gui)"/>
+  <rosparam if="$(arg is_xgomini)" command="load" file="$(find xgo)/config/xgomini.yaml" />
+  <rosparam unless="$(arg is_xgomini)" command="load" file="$(find xgo)/config/xgolite.yaml" />
+  <node name="xgo_node" pkg="xgo" type="xgo_node" respawn="false" output="screen"> 	
+  </node>
+  <!--<include file="$(find mini2_description)/launch/display.launch" >
+    <arg name="enable_joint_gui" value="$(arg enable_joint_gui)" />
+  </include>-->
+</launch>

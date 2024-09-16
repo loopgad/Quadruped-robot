@@ -1,0 +1,7 @@
+xgo_camera
+/home/pi/catkin_ws/devel/.private/xgo_camera/cmake.lock /home/pi/catkin_ws/devel/./cmake.lock
+/home/pi/catkin_ws/devel/.private/xgo_camera/lib/pkgconfig/xgo_camera.pc /home/pi/catkin_ws/devel/lib/pkgconfig/xgo_camera.pc
+/home/pi/catkin_ws/devel/.private/xgo_camera/lib/xgo_camera/cmake.lock /home/pi/catkin_ws/devel/lib/xgo_camera/cmake.lock
+/home/pi/catkin_ws/devel/.private/xgo_camera/lib/xgo_camera/xgo_camera.py /home/pi/catkin_ws/devel/lib/xgo_camera/xgo_camera.py
+/home/pi/catkin_ws/devel/.private/xgo_camera/share/xgo_camera/cmake/xgo_cameraConfig.cmake /home/pi/catkin_ws/devel/share/xgo_camera/cmake/xgo_cameraConfig.cmake
+/home/pi/catkin_ws/devel/.private/xgo_camera/share/xgo_camera/cmake/xgo_cameraConfig-version.cmake /home/pi/catkin_ws/devel/share/xgo_camera/cmake/xgo_cameraConfig-version.cmake

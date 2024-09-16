@@ -1,0 +1,96 @@
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target _xgo_ros_generate_messages_check_deps_LegPose[0m
+[35m[1mScanning dependencies of target xgo_ros_node[0m
+[35m[1mScanning dependencies of target _xgo_ros_generate_messages_check_deps_JointAngle[0m
+[  0%] Built target std_msgs_generate_messages_py
+[35m[1mScanning dependencies of target _xgo_ros_generate_messages_check_deps_BodyPose[0m
+[  3%] [32mBuilding CXX object CMakeFiles/xgo_ros_node.dir/src/xgo_control_node.cpp.o[0m
+[  3%] Built target _xgo_ros_generate_messages_check_deps_LegPose
+[  3%] Built target _xgo_ros_generate_messages_check_deps_JointAngle
+[  7%] [32mBuilding CXX object CMakeFiles/xgo_ros_node.dir/src/xgo.cpp.o[0m
+[35m[1mScanning dependencies of target _xgo_ros_generate_messages_check_deps_ArmPose[0m
+[  7%] Built target _xgo_ros_generate_messages_check_deps_BodyPose
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[  7%] Built target std_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[  7%] Built target std_msgs_generate_messages_lisp
+[  7%] Built target _xgo_ros_generate_messages_check_deps_ArmPose
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[  7%] Built target std_msgs_generate_messages_eus
+[  7%] Built target std_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_eus[0m
+[  7%] Built target geometry_msgs_generate_messages_eus
+[  7%] Built target rosgraph_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_nodejs[0m
+[  7%] Built target rosgraph_msgs_generate_messages_cpp
+[  7%] Built target roscpp_generate_messages_nodejs
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_py[0m
+[  7%] Built target geometry_msgs_generate_messages_lisp
+[  7%] Built target geometry_msgs_generate_messages_py
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_cpp[0m
+[  7%] Built target sensor_msgs_generate_messages_py
+[  7%] Built target geometry_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_eus[0m
+[  7%] Built target geometry_msgs_generate_messages_nodejs
+[  7%] Built target roscpp_generate_messages_eus
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_nodejs[0m
+[  7%] Built target sensor_msgs_generate_messages_lisp
+[  7%] Built target sensor_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target roscpp_generate_messages_py[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_cpp[0m
+[  7%] Built target roscpp_generate_messages_py
+[  7%] Built target roscpp_generate_messages_cpp
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_py[0m
+[  7%] Built target sensor_msgs_generate_messages_eus
+[  7%] Built target rosgraph_msgs_generate_messages_py
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_lisp[0m
+[  7%] Built target rosgraph_msgs_generate_messages_lisp
+[  7%] Built target roscpp_generate_messages_lisp
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_cpp[0m
+[  7%] Built target rosgraph_msgs_generate_messages_nodejs
+[  7%] Built target sensor_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target xgo_ros_generate_messages_py[0m
+[35m[1mScanning dependencies of target xgo_ros_generate_messages_nodejs[0m
+[ 11%] [34m[1mGenerating Python from MSG xgo_ros/ArmPose[0m
+[ 14%] [34m[1mGenerating Javascript code from xgo_ros/ArmPose.msg[0m
+[ 18%] [34m[1mGenerating Javascript code from xgo_ros/BodyPose.msg[0m
+[ 22%] [34m[1mGenerating Javascript code from xgo_ros/LegPose.msg[0m
+[ 25%] [34m[1mGenerating Javascript code from xgo_ros/JointAngle.msg[0m
+[ 29%] [34m[1mGenerating Python from MSG xgo_ros/BodyPose[0m
+[ 29%] Built target xgo_ros_generate_messages_nodejs
+[ 33%] [34m[1mGenerating Python from MSG xgo_ros/LegPose[0m
+[35m[1mScanning dependencies of target xgo_ros_generate_messages_lisp[0m
+In file included from [01m[K/home/pi/catkin_ws/src/xgo_ros/src/xgo_control_node.cpp:10[m[K:
+[01m[K/home/pi/catkin_ws/src/xgo_ros/include/xgo_ros/xgo.h:8:10:[m[K [01;31m[Kfatal error: [m[Kxgo_ros/JointAngle.h: No such file or directory
+    8 | #include [01;31m[K"xgo_ros/JointAngle.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/pi/catkin_ws/src/xgo_ros/src/xgo.cpp:2[m[K:
+[01m[K/home/pi/catkin_ws/src/xgo_ros/include/xgo_ros/xgo.h:8:10:[m[K [01;31m[Kfatal error: [m[Kxgo_ros/JointAngle.h: No such file or directory
+    8 | #include [01;31m[K"xgo_ros/JointAngle.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/xgo_ros_node.dir/build.make:63: CMakeFiles/xgo_ros_node.dir/src/xgo_control_node.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/xgo_ros_node.dir/build.make:76: CMakeFiles/xgo_ros_node.dir/src/xgo.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:299: CMakeFiles/xgo_ros_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 37%] [34m[1mGenerating Lisp code from xgo_ros/ArmPose.msg[0m
+[ 40%] [34m[1mGenerating Python from MSG xgo_ros/JointAngle[0m
+[ 44%] [34m[1mGenerating Lisp code from xgo_ros/BodyPose.msg[0m
+[ 48%] [34m[1mGenerating Lisp code from xgo_ros/LegPose.msg[0m
+[ 51%] [34m[1mGenerating Lisp code from xgo_ros/JointAngle.msg[0m
+[ 51%] Built target xgo_ros_generate_messages_lisp
+[ 55%] [34m[1mGenerating Python msg __init__.py for xgo_ros[0m
+[ 55%] Built target xgo_ros_generate_messages_py
+make: *** [Makefile:141: all] Error 2

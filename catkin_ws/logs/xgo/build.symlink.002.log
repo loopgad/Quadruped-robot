@@ -1,0 +1,5 @@
+Linked: (/home/pi/catkin_ws/devel/.private/xgo/lib/libxgo.so, /home/pi/catkin_ws/devel/lib/libxgo.so)
+Linked: (/home/pi/catkin_ws/devel/.private/xgo/lib/pkgconfig/xgo.pc, /home/pi/catkin_ws/devel/lib/pkgconfig/xgo.pc)
+Linked: (/home/pi/catkin_ws/devel/.private/xgo/lib/xgo/xgo_node, /home/pi/catkin_ws/devel/lib/xgo/xgo_node)
+Linked: (/home/pi/catkin_ws/devel/.private/xgo/share/xgo/cmake/xgoConfig-version.cmake, /home/pi/catkin_ws/devel/share/xgo/cmake/xgoConfig-version.cmake)
+Linked: (/home/pi/catkin_ws/devel/.private/xgo/share/xgo/cmake/xgoConfig.cmake, /home/pi/catkin_ws/devel/share/xgo/cmake/xgoConfig.cmake)

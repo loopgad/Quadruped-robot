@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "/opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py", line 54, in <module>
+    spec = load_msg_from_file(msg_context, msg_file, full_type_name)
+  File "/opt/ros/noetic/lib/python3/dist-packages/genmsg/msg_loader.py", line 284, in load_msg_from_file
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/pi/catkin_ws/src/xgo_ros/msg/BodyPose.msg'
+Traceback (most recent call last):
+  File "/opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py", line 54, in <module>
+    spec = load_msg_from_file(msg_context, msg_file, full_type_name)
+  File "/opt/ros/noetic/lib/python3/dist-packages/genmsg/msg_loader.py", line 284, in load_msg_from_file
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/pi/catkin_ws/src/xgo_ros/msg/LegPose.msg'
+Traceback (most recent call last):
+  File "/opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py", line 54, in <module>
+    spec = load_msg_from_file(msg_context, msg_file, full_type_name)
+  File "/opt/ros/noetic/lib/python3/dist-packages/genmsg/msg_loader.py", line 284, in load_msg_from_file
+    with open(file_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/pi/catkin_ws/src/xgo_ros/msg/JointAngle.msg'
+make[2]: *** [CMakeFiles/_xgo_ros_generate_messages_check_deps_LegPose.dir/build.make:57: CMakeFiles/_xgo_ros_generate_messages_check_deps_LegPose] Error 1
+make[1]: *** [CMakeFiles/Makefile2:272: CMakeFiles/_xgo_ros_generate_messages_check_deps_LegPose.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/_xgo_ros_generate_messages_check_deps_BodyPose.dir/build.make:57: CMakeFiles/_xgo_ros_generate_messages_check_deps_BodyPose] Error 1
+make[1]: *** [CMakeFiles/Makefile2:380: CMakeFiles/_xgo_ros_generate_messages_check_deps_BodyPose.dir/all] Error 2
+make[2]: *** [CMakeFiles/_xgo_ros_generate_messages_check_deps_JointAngle.dir/build.make:57: CMakeFiles/_xgo_ros_generate_messages_check_deps_JointAngle] Error 1
+make[1]: *** [CMakeFiles/Makefile2:245: CMakeFiles/_xgo_ros_generate_messages_check_deps_JointAngle.dir/all] Error 2
+/usr/bin/ld: CMakeFiles/xgo_ros_node.dir/src/xgo.cpp.o: in function `XGO::XGO(ros::NodeHandle*)':
+xgo.cpp:(.text+0x33c): undefined reference to `tf::TransformBroadcaster::TransformBroadcaster()'
+/usr/bin/ld: CMakeFiles/xgo_ros_node.dir/src/xgo.cpp.o: in function `XGO::pubBaseTf()':
+xgo.cpp:(.text+0x348c): undefined reference to `tf::TransformBroadcaster::sendTransform(tf::StampedTransform const&)'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/xgo_ros_node.dir/build.make:117: /home/pi/catkin_ws/devel/.private/xgo_ros/lib/xgo_ros/xgo_ros_node] Error 1
+make[1]: *** [CMakeFiles/Makefile2:299: CMakeFiles/xgo_ros_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

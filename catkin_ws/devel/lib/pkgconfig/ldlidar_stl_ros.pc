@@ -1,0 +1,1 @@
+/home/pi/catkin_ws/devel/.private/ldlidar_stl_ros/lib/pkgconfig/ldlidar_stl_ros.pc

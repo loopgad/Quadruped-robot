@@ -1,0 +1,5 @@
+Symlinking /home/pi/catkin_ws/devel/lib/pkgconfig/xgo_camera.pc
+Symlinking /home/pi/catkin_ws/devel/lib/xgo_camera/cmake.lock
+Symlinking /home/pi/catkin_ws/devel/lib/xgo_camera/xgo_camera.py
+Symlinking /home/pi/catkin_ws/devel/share/xgo_camera/cmake/xgo_cameraConfig.cmake
+Symlinking /home/pi/catkin_ws/devel/share/xgo_camera/cmake/xgo_cameraConfig-version.cmake

@@ -1,0 +1,14 @@
+[35m[1mScanning dependencies of target ldlidar_stl_ros_listen_node[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros_listen_node.dir/src/listen_node/listen_node.cpp.o[0m
+[35m[1mScanning dependencies of target ldlidar_stl_ros_node[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros_node.dir/src/publish_node/main.cpp.o[0m
+[ 30%] [32m[1mLinking CXX executable /home/pi/catkin_ws/devel/.private/ldlidar_stl_ros/lib/ldlidar_stl_ros/ldlidar_stl_ros_listen_node[0m
+[ 30%] Built target ldlidar_stl_ros_listen_node
+[ 40%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros_node.dir/ldlidar_driver/src/core/ldlidar_driver.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros_node.dir/ldlidar_driver/src/dataprocess/lipkg.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros_node.dir/ldlidar_driver/src/filter/tofbf.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros_node.dir/ldlidar_driver/src/logger/log_module.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros_node.dir/ldlidar_driver/src/networkcom/network_socket_interface_linux.cpp.o[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros_node.dir/ldlidar_driver/src/serialcom/serial_interface_linux.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/pi/catkin_ws/devel/.private/ldlidar_stl_ros/lib/ldlidar_stl_ros/ldlidar_stl_ros_node[0m
+[100%] Built target ldlidar_stl_ros_node

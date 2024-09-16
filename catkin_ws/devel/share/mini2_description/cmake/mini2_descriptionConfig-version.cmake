@@ -1,0 +1,1 @@
+/home/pi/catkin_ws/devel/.private/mini2_description/share/mini2_description/cmake/mini2_descriptionConfig-version.cmake

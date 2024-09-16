@@ -1,0 +1,5 @@
+Symlinking /home/pi/catkin_ws/devel/lib/libxgo.so
+Symlinking /home/pi/catkin_ws/devel/lib/pkgconfig/xgo.pc
+Symlinking /home/pi/catkin_ws/devel/lib/xgo/xgo_node
+Symlinking /home/pi/catkin_ws/devel/share/xgo/cmake/xgoConfig-version.cmake
+Symlinking /home/pi/catkin_ws/devel/share/xgo/cmake/xgoConfig.cmake

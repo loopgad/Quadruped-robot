@@ -1,0 +1,1 @@
+/home/pi/catkin_ws/devel/.private/xgo_camera/lib/pkgconfig/xgo_camera.pc

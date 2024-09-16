@@ -1,0 +1,16 @@
+In file included from [01m[K/home/pi/catkin_ws/src/xgo_ros/src/xgo_control_node.cpp:10[m[K:
+[01m[K/home/pi/catkin_ws/src/xgo_ros/include/xgo_ros/xgo.h:8:10:[m[K [01;31m[Kfatal error: [m[Kxgo_ros/JointAngle.h: No such file or directory
+    8 | #include [01;31m[K"xgo_ros/JointAngle.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/pi/catkin_ws/src/xgo_ros/src/xgo.cpp:2[m[K:
+[01m[K/home/pi/catkin_ws/src/xgo_ros/include/xgo_ros/xgo.h:8:10:[m[K [01;31m[Kfatal error: [m[Kxgo_ros/JointAngle.h: No such file or directory
+    8 | #include [01;31m[K"xgo_ros/JointAngle.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/xgo_ros_node.dir/build.make:63: CMakeFiles/xgo_ros_node.dir/src/xgo_control_node.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/xgo_ros_node.dir/build.make:76: CMakeFiles/xgo_ros_node.dir/src/xgo.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:299: CMakeFiles/xgo_ros_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

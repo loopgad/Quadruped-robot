@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<launch>
+  <arg
+    name="model" />
+  <arg name="enable_joint_gui" default="true"/>
+  <param
+    name="robot_description"
+    textfile="$(find mini2_description)/urdf/mini2_description.urdf" />
+  <node if="$(arg enable_joint_gui)"
+    name="joint_state_publisher_gui"
+    pkg="joint_state_publisher_gui"
+    type="joint_state_publisher_gui" />
+  <node
+    name="robot_state_publisher"
+    pkg="robot_state_publisher"
+    type="robot_state_publisher" />
+  <node
+    name="rviz"
+    pkg="rviz"
+    type="rviz"
+    args="-d $(find mini2_description)/launch/urdf.rviz" />
+</launch>

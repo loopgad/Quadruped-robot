@@ -1,0 +1,1 @@
+/home/pi/catkin_ws/devel/.private/xgo_camera/share/xgo_camera/cmake/xgo_cameraConfig-version.cmake
