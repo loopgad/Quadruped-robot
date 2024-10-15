@@ -1,0 +1,7 @@
+C:/Users/32806/Desktop/XGO_robot/scoket/socket/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/socket.dir
+C:/Users/32806/Desktop/XGO_robot/scoket/socket/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/32806/Desktop/XGO_robot/scoket/socket/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/32806/Desktop/XGO_robot/scoket/socket/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+C:/Users/32806/Desktop/XGO_robot/scoket/socket/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/install.dir
+C:/Users/32806/Desktop/XGO_robot/scoket/socket/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+C:/Users/32806/Desktop/XGO_robot/scoket/socket/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
