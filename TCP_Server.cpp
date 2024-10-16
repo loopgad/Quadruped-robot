@@ -1,18 +1,10 @@
-#include <stdio.h>
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <errno.h>
-#include <string.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <netinet/in.h>
-#include <ctype.h>
+#include "DOG_SOCKET.h"
 
 #define MAXSIZE 1024
 #define IP_ADDR "127.0.0.1"
-#define IP_PORT 8888
+#define IP_PORT 7878
 
-int main()
+void Socket_Server_Function()
 {
 	int i_listenfd, i_connfd;
 	struct sockaddr_in st_sersock;
@@ -72,21 +64,28 @@ int main()
 			}
 			else
 			{
-				printf("recvMsg:%s", msg);
 				for(int i=0; msg[i] != '\0'; i++)
 				{
 					msg[i] = toupper(msg[i]);
 				}
+				for(int i=0; msg[i] != '\0'; i++)
+				{
+					RX_msg[i] = msg[i];
+				}
+				printf("recvMsg:%s", msg);
 				if(write(i_connfd, msg, strlen(msg)+1) < 0)
 				{
 					printf("accept Error: %s (errno: %d)\n", strerror(errno), errno);
 				}
 
 			}
+			if(Server_Flag)//写标志位来控制exit
+			{
+				printf("server exit");
+				break;
+			}
 		}
 	}
 	close(i_connfd);
 	close(i_listenfd);
-
-	return 0;
 }

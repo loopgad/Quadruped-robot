@@ -1,13 +1,4 @@
-#include <stdio.h>
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <errno.h>
-#include <string.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <netinet/in.h>
-#include <signal.h>
-#include <arpa/inet.h>
+#include "DOG_SOCKET.h"
 
 #define MAXSIZE 1024
 #define IP_ADDR "127.0.0.1"
@@ -15,7 +6,7 @@
 
 int i_sockfd = -1;
 
-void SigCatch(int sigNum)	//信号捕捉函数(捕获Ctrl+C)
+inline void SigCatch(int sigNum)	//信号捕捉函数(捕获Ctrl+C)
 {
 	if(i_sockfd != -1)
 	{
@@ -25,10 +16,9 @@ void SigCatch(int sigNum)	//信号捕捉函数(捕获Ctrl+C)
 	exit(0);
 }
 
-int main()
+void Socket_Client_Function(char msg[1024])
 {
 	struct sockaddr_in st_clnsock;
-	char msg[1024];
 	int nrecvSize = 0;
 
 	signal(SIGINT, SigCatch);	//注册信号捕获函数
@@ -59,7 +49,7 @@ int main()
 
 	while(1)	//循环输入，向服务端发送数据并接受服务端返回的数据
 	{
-		fgets(msg, MAXSIZE, stdin);
+		//fgets(msg, MAXSIZE, stdin);//直接给msg写
 		printf("will send: %s", msg);
 		if(write(i_sockfd, msg, MAXSIZE) < 0)	//发送数据
 		{
@@ -77,10 +67,19 @@ int main()
 			printf("Service Close!\n");
 		}
 		else
-		{
+		{	
+			for(int i=0; msg[i] != '\0'; i++)
+				{
+					RX_msg[i] = msg[i];
+				}
 			printf("Server return: %s\n", msg);
 		}
 
+		if(Client_Flag)//写标志位来控制exit
+		{
+				printf("server exit");
+				break;
+		}
+
 	}
-	return 0;
 }
