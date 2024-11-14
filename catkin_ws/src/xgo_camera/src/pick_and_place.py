@@ -138,5 +138,6 @@ while 1:  # 无限循环
             dog.claw(0)  # 打开爪子
             break  # 退出循环
 
+
 cap.release()  # 释放视频捕获对象
 cv2.destroyAllWindows()  # 关闭所有OpenCV窗口
