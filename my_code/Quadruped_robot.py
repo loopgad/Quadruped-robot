@@ -1,6 +1,17 @@
 from xgoedu import XGOEDU
 XGO_edu = XGOEDU()
 
+
+
+animal_to_audio = {
+    "cat": "cat.wav",
+    "bird": "bird.wav",
+    "dog": "dog.wav",
+    "horse": "horse.wav",
+    "elephant": "elephant.wav",
+    "giraffe": "giraffe.wav"
+}
+
 class robot_contrller:
     ## 初始化任务队列
     def __init__(self):
@@ -26,15 +37,25 @@ class recognize_QRcode(command):
             print("No QR Code Found")
 
 
-## 识别动物       
+## 识别动物并播报
 class recognize_animal(command):
     def execute(self):       ## 可以在这里加参数
-        result=XGO_edu.yoloFast(target="camera")  
-        print(result)
-        if result!=None:     #先加结果是否为空的判断，否则会提示下标错误
-            yolo=result[0]   #获取动物识别结果（字符串）
-            x=result[1][0]   #获取x坐标（数值）
-            y=result[1][1]   #获取y坐标（数值）
+        # 循环进行摄像头识别，按c键退出
+        while True:
+            # 使用yoloFast方法进行物体识别
+            result = XGO_edu.yoloFast(target="camera")
+            print(result)
+
+            # 检查结果是否为空
+            if result is not None:
+                # 获取识别结果和坐标
+                yolo = result[0]  # 动物识别结果（字符串）
+                x = result[1][0]  # x坐标（数值）
+                y = result[1][1]  # y坐标（数值）
+                # 检查是否识别出了已知的动物
+                if yolo in animal_to_audio:
+                    # 播放对应的音频文件
+                    XGO_edu.xgoSpeaker(animal_to_audio[yolo])
 
 ## 播报声音
 class broadcast_sound(command):
