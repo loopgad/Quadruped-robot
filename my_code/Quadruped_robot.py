@@ -1,7 +1,7 @@
 from xgoedu import XGOEDU
+from xgolib import XGO
+XGO_mini = XGO("xgomini")
 XGO_edu = XGOEDU()
-
-
 
 animal_to_audio = {
     "cat": "cat.wav",
@@ -67,19 +67,68 @@ class turnon_led(command):
     def execute(self,led_color):
         print("led_color")
 
-## tcp通信
-class tcp_communication(command):
+## 步骤1：前进
+class move_step1(command):
     def execute(self):
-        print("tcp通信")
+        XGO_mini.move_x(7)
+        time.sleep(2)
+        XGO_mini.move_x(0)
+        XGO_mini.move_x(7)
+        time.sleep(1.3*2)
+        XGO_mini.move_x(0)
+        time.sleep(1)
 
-## 抓取
-class  gripper(command):
-    def excute(self):
-        print("抓取")
+class move_step2(command):
+    def execute(self):
+        XGO_mini.move_y(-7)
+        time.sleep(1.8)
+        XGO_mini.move_y(0)
+        XGO_mini.move_y(-7)
+        time.sleep(1.5*4-1.25)
+        XGO_mini.move_y(0)
+        time.sleep(1)
+        XGO_mini.move_x(7)
+        time.sleep(2)
+        XGO_mini.move_x(0)
+        XGO_mini.move_x(7)
+        time.sleep(1.3*6)
+        XGO_mini.move_x(0)
+        time.sleep(1)
 
-# 使用
+
+class move_step3(command):
+    def execute(self):
+        XGO_mini.turn(45)
+        time.sleep(2.3)
+        XGO_mini.turn(0)
+        time.sleep(1)
+        XGO_mini.move_x(7)
+        time.sleep(2)
+        XGO_mini.move_x(0)
+        XGO_mini.move_x(7)
+        time.sleep(1.3*10)
+        XGO_mini.move_x(0)
+        time.sleep(1)
+        XGO_mini.turn(-45)
+        time.sleep(2.2)
+        XGO_mini.turn(0)
+        time.sleep(1)
+        XGO_mini.move_x(7)
+        time.sleep(2)
+        XGO_mini.move_x(0)
+        XGO_mini.move_x(7)
+        time.sleep(1.3*4)
+        XGO_mini.move_x(0)
+
+
+# 主函数
 controller = robot_contrller()
-controller.add_command(MoveCommand("forward", 10))  # 创建命令实例时传入参数
-controller.add_command(GrabCommand("box"))
-controller.add_command(AvoidObstacleCommand("wall"))
+controller.add_command(move_step1)  # 创建命令实例时传入参数
+controller.add_command(recognize_animal)
+controller.execute_commands()
+controller.add_command(move_step2)
+controller.add_command(recognize_animal)
+controller.execute_commands()
+controller.add_command(move_step2)
+controller.add_command(recognize_animal)
 controller.execute_commands()
