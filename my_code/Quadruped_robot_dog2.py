@@ -74,29 +74,11 @@ class move_step1(command):
         time.sleep(2)
         XGO_mini.move_x(0)
         XGO_mini.move_x(7)
-        time.sleep(1.3*2)
+        time.sleep(1.3*2.5)
         XGO_mini.move_x(0)
         time.sleep(1)
 
 class move_step2(command):
-    def execute(self):
-        XGO_mini.move_y(-7)
-        time.sleep(1.8)
-        XGO_mini.move_y(0)
-        XGO_mini.move_y(-7)
-        time.sleep(1.5*4-1.25)
-        XGO_mini.move_y(0)
-        time.sleep(1)
-        XGO_mini.move_x(7)
-        time.sleep(2)
-        XGO_mini.move_x(0)
-        XGO_mini.move_x(7)
-        time.sleep(1.3*6)
-        XGO_mini.move_x(0)
-        time.sleep(1)
-
-
-class move_step3(command):
     def execute(self):
         XGO_mini.turn(45)
         time.sleep(2.3)
@@ -106,7 +88,7 @@ class move_step3(command):
         time.sleep(2)
         XGO_mini.move_x(0)
         XGO_mini.move_x(7)
-        time.sleep(1.3*10)
+        time.sleep(1.3*10+0.5)
         XGO_mini.move_x(0)
         time.sleep(1)
         XGO_mini.turn(-45)
@@ -117,16 +99,16 @@ class move_step3(command):
         time.sleep(2)
         XGO_mini.move_x(0)
         XGO_mini.move_x(7)
-        time.sleep(1.3*4)
-        XGO_mini.move_x(0)
+        time.sleep(1.3*4+0.5)
+        XGO_mini.move_x(0)  
+
+
+
 
 
 # 主函数
 controller = robot_contrller()
 controller.add_command(move_step1)  # 创建命令实例时传入参数
-controller.add_command(recognize_animal)
-controller.execute_commands()
-controller.add_command(move_step2)
 controller.add_command(recognize_animal)
 controller.execute_commands()
 controller.add_command(move_step2)
